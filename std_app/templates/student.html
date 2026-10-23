@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Portal</title>
+    </head>
+    <body style="background-color: lightblue;">
+        <h1>Django Template Tutorial</h1>
+        {{mydata.id}}
+        {{mydata.name}}
+        {{mydata.email}}
+        {{mydata.age}}
+        {% if mydata.age >= 18 %}
+        <p style="color:green;">Eligible for voting</p>
+        {% else %}
+        <p style="color:red;">Not Eligible for voting</p>
+        {% endif %}
+    </body>
+</html>
